@@ -4,9 +4,14 @@
 ![Version 4.0.0](https://img.shields.io/badge/version-4.0.0-yellow.svg)
 [![License](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://github.com/newbee-ltd/newbee-mall-cloud/blob/main/LICENSE)
 
+
 newbee-mall-cloud 项目是新蜂商城 newbee-mall 项目的微服务版本，一款基于 Spring Cloud Alibaba + Nacos + Sentinel + Seata + Spring Cloud Gateway + OpenFeign + Spring Cloud Seluth + Zipkin + ELK 等技术的大型微服务实战项目。
 
 当前分支的 Spring Boot 版本为 2.6.3，Spring Cloud 版本为 2021.0.1，想要学习和使用其它版本可以直接点击下方的分支名称跳转至对应的仓库分支中。
+
+如果单体项目，查看另外一个项目：
+- 后端单体：【feature-dev】：https://github.com/nyhxiaoning/newbee-mall-api.git
+- 前端内容：【feature-dev】：https://gitee.com/nyhxiaoning/vue3-admin-newbee.git
 
 |                                              分支名称                                              | Spring Boot Version | Spring Cloud Version | Spring Cloud Alibaba Version |
 |:----------------------------------------------------------------------------------------------:|:----------------:|:----------------:|:----------------:|
