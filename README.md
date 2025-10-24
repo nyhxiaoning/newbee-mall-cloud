@@ -1,17 +1,18 @@
-![newbee-mall-cloud-alibaba](./static-files/newbee-mall-cloud-alibaba-l.png)
 
-![Build Status](https://img.shields.io/badge/build-passing-green.svg)
-![Version 4.0.0](https://img.shields.io/badge/version-4.0.0-yellow.svg)
-[![License](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://github.com/newbee-ltd/newbee-mall-cloud/blob/main/LICENSE)
-
-
-newbee-mall-cloud 项目是新蜂商城 newbee-mall 项目的微服务版本，一款基于 Spring Cloud Alibaba + Nacos + Sentinel + Seata + Spring Cloud Gateway + OpenFeign + Spring Cloud Seluth + Zipkin + ELK 等技术的大型微服务实战项目。
+## newbee-mall-cloud 项目是新蜂商城 newbee-mall 项目的微服务版本，一款基于 Spring Cloud Alibaba + Nacos + Sentinel + Seata + Spring Cloud Gateway + OpenFeign + Spring Cloud Seluth + Zipkin + ELK 等技术的大型微服务实战项目。
 
 当前分支的 Spring Boot 版本为 2.6.3，Spring Cloud 版本为 2021.0.1，想要学习和使用其它版本可以直接点击下方的分支名称跳转至对应的仓库分支中。
 
-如果单体项目，查看另外一个项目：
+当前的项目技术文档对应：
+https://gitee.com/overseas_lessons/Learn-Coding-Books
+
+
+### 如果单体项目，查看另外一个项目：
 - 后端单体：【feature-dev】：https://github.com/nyhxiaoning/newbee-mall-api.git
 - 前端内容：【feature-dev】：https://gitee.com/nyhxiaoning/vue3-admin-newbee.git
+
+### 启动项目说明
+
 
 |                                              分支名称                                              | Spring Boot Version | Spring Cloud Version | Spring Cloud Alibaba Version |
 |:----------------------------------------------------------------------------------------------:|:----------------:|:----------------:|:----------------:|
@@ -131,23 +132,12 @@ newbee-mall-cloud 项目是新蜂商城 newbee-mall 项目的微服务版本，�
 
 ## 联系作者
 
-关注公众号：**程序员十三**，回复"勾搭"进群交流。
-
-![wx-gzh](https://newbee-mall.oss-cn-beijing.aliyuncs.com/wx-gzh/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8D%81%E4%B8%89-%E5%85%AC%E4%BC%97%E5%8F%B7.png)
-
-> 大家有任何问题或者建议都可以在 [issues](https://github.com/newbee-ltd/newbee-mall-cloud/issues) 中反馈给我，我会慢慢完善这个项目。
-
-- 我的邮箱：2449207463@qq.com
-- QQ技术交流群：791509631
 
 > newbee-mall-cloud 在 GitHub 和国内的码云都创建了代码仓库，如果有人访问 GitHub 比较慢的话，建议在 Gitee 上查看该项目，两个仓库会保持同步更新。
 
 - [newbee-mall-cloud in GitHub](https://github.com/newbee-ltd/newbee-mall-cloud)
 - [newbee-mall-cloud in Gitee](https://gitee.com/newbee-ltd/newbee-mall-cloud)
 
-## 软件著作权
-
-本系统已申请软件著作权，受国家版权局知识产权以及国家计算机软件著作权保护！
 
 ## 感谢
 
