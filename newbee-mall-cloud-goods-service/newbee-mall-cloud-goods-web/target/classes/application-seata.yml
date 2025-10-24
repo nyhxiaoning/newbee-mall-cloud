@@ -1,0 +1,35 @@
+# Seata 分布式事务配置文件
+# 当需要启用 Seata 时，可以通过 spring.profiles.active=seata 激活此配置
+
+seata:
+  enabled: true
+  application-id: newbee-mall-cloud-goods-service
+  tx-service-group: newbee-mall-cloud-goods-service-group
+  enable-auto-data-source-proxy: false  # 使用自定义数据源代理
+  
+  # Seata 注册中心配置
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: localhost:8848
+      group: SEATA_GROUP
+      namespace: ""
+      username: nacos
+      password: nacos
+      
+  # Seata 配置中心
+  config:
+    type: nacos
+    nacos:
+      server-addr: localhost:8848
+      group: SEATA_GROUP
+      namespace: ""
+      username: nacos
+      password: nacos
+      data-id: seataServer.properties
+
+logging:
+  level:
+    io.seata: INFO
+    ltd.goods.cloud.newbee: DEBUG

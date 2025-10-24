@@ -203,6 +203,30 @@ docker run -d \
 
 ### 第三步：启动微服务
 
+#### 启动微服务前，先安装模块
+
+##### 解决步骤
+
+第一步：在根目录安装父项目
+
+mvn clean install -N
+
+##### 回到项目根目录
+
+cd /Users/henryning/Documents/code/personCode/newbee-mall-cloud#
+
+##### 安装父项目到本地 Maven 仓库
+
+mvn clean install -N
+
+-N 参数表示只安装当前项目，不递归安装子模块。
+
+##### 接着：安装所有模块
+
+mvn clean install
+
+# 安装所有模块（包括公共模块和 API 模块）mvn clean install
+
 **推荐启动顺序**：
 
 1. **启动公共模块**：
@@ -259,7 +283,7 @@ mvn spring-boot:run
 1. **检查 Nacos 注册情况**：
 
    - 访问 http://localhost:8848/nacos
-   - 在服务管理 -> 服务列表中查看所有服务是否注册成功
+   - 在：服务管理 -> 服务列表中查看所有服务是否注册成功
 
 2. **测试网关访问**：
 
@@ -304,3 +328,70 @@ java -jar zipkin-server-2.23.2-exec.jar --server.port=9411
 4. **服务注册失败**：检查网络连接和 Nacos 配置
 
 启动完成后，你可以通过网关地址 http://localhost:29110 访问整个微服务系统。
+
+# 启动报错，解决问题大全：
+
+## 1.nacos 软件本地安装。
+
+✅
+
+## 2.第一个项目：启动公共模块报错：
+
+✅
+
+- common 公共模块，默认启动报错：
+
+我来帮你分析并解决这个 Lombok 编译错误。这是一个典型的 Java 模块系统与 Lombok 兼容性问题。
+
+解决方案
+Lombok 的@Data 注解。让我们检查当前的 Java 版本和 Maven 配置
+
+改-lombok 的版本为 version 为：1.18.20
+
+### 继续按照顺序启动
+
+## 3.启动：商品服务模块报错：
+
+- **启动商品服务**：
+  我看到商品服务启动时出现了 Seata 分布式事务相关的错误。这个错误主要是由于 Java 模块系统限制导致的，特别是 java.lang.reflect.InaccessibleObjectException，表明 Seata 无法访问 Java 内部模块。
+
+  - 原因：
+
+  ```ts
+  现在我看到了问题的根源。商品服务启用了 Seata 分布式事务（seata.enabled=true），但是在 Java 11+ 环境下，Seata 使用的 CGLIB 库无法访问 Java 内部模块，导致 InaccessibleObjectException。
+  ```
+
+  现在我明确了问题的根源。项目使用的是：
+
+Spring Cloud Alibaba 版本：2021.0.1.0
+这个版本包含的 Seata 版本大约是 1.4.2
+这个 Seata 版本在 Java 11+ 环境下会遇到模块系统访问限制问题。我提供几个解决方案：
+给出了优雅降级方案，如果不能用：
+/Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-goods-service/newbee-mall-cloud-goods-web/SEATA_STARTUP_GUIDE.md
+
+同时禁用了这个 Seata 服务。
+
+## 4.其他购物车也是如上 Seats 服务修改。
+
+## 5.所有的服务：都正常注册到 nacos 上后，为什么启动访问网关，报错
+
+如何测试当前的接口：
+http://localhost:29110
+
+### 微服务注册完成检测：
+
+#### 基础检查命令：
+
+```
+chmod +x check-services.sh
+./check-services.sh
+
+```
+
+#### 启动所有服务：
+
+```
+chmod +x start-all-services.sh
+./start-all-services.sh
+
+```

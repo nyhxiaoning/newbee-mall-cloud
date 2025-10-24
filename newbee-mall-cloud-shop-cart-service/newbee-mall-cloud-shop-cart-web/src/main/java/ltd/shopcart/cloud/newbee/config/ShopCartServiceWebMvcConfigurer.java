@@ -15,6 +15,7 @@ import ltd.shopcart.cloud.newbee.config.handler.TokenToMallUserMethodArgumentRes
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -31,6 +32,9 @@ import java.util.Optional;
 public class ShopCartServiceWebMvcConfigurer extends WebMvcConfigurationSupport {
 
     private static final Logger log = LoggerFactory.getLogger(ShopCartServiceWebMvcConfigurer.class);
+
+    @Value("${seata.enabled:false}")
+    private boolean seataEnabled;
 
     @Autowired
     private SentinelProperties sentinelProperties;
@@ -57,7 +61,11 @@ public class ShopCartServiceWebMvcConfigurer extends WebMvcConfigurationSupport 
     }
 
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new SeataHandlerInterceptor()).addPathPatterns("/**");
+        // 条件化注册 Seata 拦截器
+        if (seataEnabled) {
+            registry.addInterceptor(new SeataHandlerInterceptor()).addPathPatterns("/**");
+            log.info("[Seata Starter] register SeataHandlerInterceptor with urlPatterns: /**");
+        }
         if (this.sentinelWebInterceptorOptional.isPresent()) {
             SentinelProperties.Filter filterConfig = this.sentinelProperties.getFilter();
             registry.addInterceptor((HandlerInterceptor) this.sentinelWebInterceptorOptional.get()).order(filterConfig.getOrder()).addPathPatterns(filterConfig.getUrlPatterns());

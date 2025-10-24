@@ -194,7 +194,14 @@ public class NewBeeAdminGoodsInfoController {
     @PutMapping("/updateStock")
     @ApiOperation(value = "修改库存", notes = "")
     public Result updateStock(@RequestBody UpdateStockNumDTO updateStockNumDTO) {
-        System.out.println("RootContext.getXID()="+RootContext.getXID());
+        try {
+            String xid = RootContext.getXID();
+            if (xid != null) {
+                logger.info("Seata Global Transaction XID: {}", xid);
+            }
+        } catch (Exception e) {
+            logger.debug("Seata not available or disabled: {}", e.getMessage());
+        }
         return ResultGenerator.genSuccessResult(newBeeMallGoodsService.updateStockNum(updateStockNumDTO.getStockNumDTOS()));
     }
 

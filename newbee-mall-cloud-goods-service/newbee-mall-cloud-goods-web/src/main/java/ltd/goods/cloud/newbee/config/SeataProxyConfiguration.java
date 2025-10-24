@@ -2,6 +2,7 @@ package ltd.goods.cloud.newbee.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import io.seata.rm.datasource.DataSourceProxy;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +11,8 @@ import org.springframework.context.annotation.Primary;
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
-@Configuration
+// @Configuration
+// 此配置类已被 SeataConfiguration 替代，提供更优雅的 Seata 配置方案
 public class SeataProxyConfiguration {
 
     //创建Druid数据源
