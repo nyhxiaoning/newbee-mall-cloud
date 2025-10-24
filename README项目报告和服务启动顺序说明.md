@@ -395,3 +395,50 @@ chmod +x start-all-services.sh
 ./start-all-services.sh
 
 ```
+
+## 6.排查：逐步测试：先测试直连服务，再测试通过网关
+
+### 微服务：排查问题，比较麻烦
+
+可以先绕过 gateway 的命令行：
+
+#### 直接调用用户服务注册接口
+
+```
+curl -X POST "http://localhost:29000/users/mall/register" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "loginName": "13800138002",
+    "password": "123456"
+  }' -v
+
+```
+
+#### 测试当前的 docker 的镜像服务是否正常？
+
+```ts
+# 给诊断脚本执行权限
+chmod +x diagnose-goods-mysql.sh
+
+# 运行诊断
+./diagnose-goods-mysql.sh
+
+```
+
+##### 补充 docker 初始化数据库：
+
+```
+# 复制 SQL 文件到容器
+docker cp static-files/newbee_mall_cloud_goods_db.sql newbee-mysql:/tmp/
+
+
+# 执行 SQL 文件
+docker exec newbee-mysql mysql -uroot -pnyh123 -e "source /tmp/newbee_mall_cloud_goods_db.sql"
+```
+
+#### 解决：使用下面的诊断
+
+diagnose-gateway-issue.sh：全面诊断网关问题
+test-gateway-final.sh：自动修复常见问题
+
+修复完成当前的启动的网关问题。

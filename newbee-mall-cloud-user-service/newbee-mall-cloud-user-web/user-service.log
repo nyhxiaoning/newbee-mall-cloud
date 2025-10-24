@@ -1,0 +1,243 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------< ltd.user.newbee.cloud:newbee-mall-cloud-user-web >----------
+[INFO] Building newbee-mall-cloud-user-web 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.6.3:run (default-cli) > test-compile @ newbee-mall-cloud-user-web >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ newbee-mall-cloud-user-web ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ newbee-mall-cloud-user-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ newbee-mall-cloud-user-web ---
+[INFO] skip non existing resourceDirectory /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-user-service/newbee-mall-cloud-user-web/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ newbee-mall-cloud-user-web ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:2.6.3:run (default-cli) < test-compile @ newbee-mall-cloud-user-web <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.6.3:run (default-cli) @ newbee-mall-cloud-user-web ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.3)
+
+2025-10-24 17:17:23.324  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] .n.NewBeeMallCloudUserServiceApplication : Starting NewBeeMallCloudUserServiceApplication using Java 17.0.16 on henry-daning.local with PID 5069 (/Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-user-service/newbee-mall-cloud-user-web/target/classes started by henryning in /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-user-service/newbee-mall-cloud-user-web)
+2025-10-24 17:17:23.325  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] .n.NewBeeMallCloudUserServiceApplication : No active profile set, falling back to default profiles: default
+2025-10-24 17:17:23.863  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-10-24 17:17:23.866  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-24 17:17:23.882  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-24 17:17:24.043  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d7799d56-aea2-3b2e-9d6e-bb35486d38fd
+2025-10-24 17:17:24.281  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-10-24 17:17:24.284  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-10-24 17:17:24.285  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$555/0x000000e8014aeb18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-10-24 17:17:24.287  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-10-24 17:17:24.321  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-10-24 17:17:24.325  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-10-24 17:17:24.556  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 29000 (http)
+2025-10-24 17:17:24.566  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-24 17:17:24.566  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-10-24 17:17:24.640  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-24 17:17:24.640  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1282 ms
+2025-10-24 17:17:24.836  WARN [newbee-mall-cloud-user-service,,] 5069 --- [           main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused}]
+2025-10-24 17:17:25.370  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] l.u.c.n.c.UserServiceWebMvcConfigurer    : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-10-24 17:17:25.977  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2025-10-24 17:17:25.977  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2025-10-24 17:17:25.978  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2025-10-24 17:17:25.979  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] c.alibaba.nacos.client.utils.ParamUtil   : [settings] [req-serv] nacos-server port:8848
+2025-10-24 17:17:25.979  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] c.alibaba.nacos.client.utils.ParamUtil   : [settings] [http-client] connect timeout:1000
+2025-10-24 17:17:25.979  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] c.alibaba.nacos.client.utils.ParamUtil   : PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-24 17:17:26.196  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] c.a.n.client.identify.CredentialWatcher  : null No credential found
+2025-10-24 17:17:26.237  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 29000 (http) with context path ''
+2025-10-24 17:17:26.240  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=29000, ip='192.168.1.14', weight=1.0, serviceName='DEFAULT_GROUP@@newbee-mall-cloud-user-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2025-10-24 17:17:26.240  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@newbee-mall-cloud-user-service with instance: Instance{instanceId='null', ip='192.168.1.14', port=29000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2025-10-24 17:17:26.247  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP newbee-mall-cloud-user-service 192.168.1.14:29000 register finished
+2025-10-24 17:17:26.364  INFO [newbee-mall-cloud-user-service,,] 5069 --- [           main] .n.NewBeeMallCloudUserServiceApplication : Started NewBeeMallCloudUserServiceApplication in 3.257 seconds (JVM running for 3.59)
+2025-10-24 17:17:26.374  INFO [newbee-mall-cloud-user-service,29681be1490254f1,29681be1490254f1] 5069 --- [io-29000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-24 17:17:26.374  INFO [newbee-mall-cloud-user-service,29681be1490254f1,29681be1490254f1] 5069 --- [io-29000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-24 17:17:26.376  INFO [newbee-mall-cloud-user-service,29681be1490254f1,29681be1490254f1] 5069 --- [io-29000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-24 17:17:26.383 ERROR [newbee-mall-cloud-user-service,29681be1490254f1,29681be1490254f1] 5069 --- [io-29000-exec-1] l.u.c.n.c.UserServiceExceptionHandler    : UserServiceExceptionHandler:
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:90)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:90)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-10-24 17:17:27.239  INFO [newbee-mall-cloud-user-service,,] 5069 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@newbee-mall-cloud-user-service@@DEFAULT -> [{"instanceId":"192.168.1.14#29000#DEFAULT#DEFAULT_GROUP@@newbee-mall-cloud-user-service","ip":"192.168.1.14","port":29000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@newbee-mall-cloud-user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2025-10-24 17:17:27.242  INFO [newbee-mall-cloud-user-service,,] 5069 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@newbee-mall-cloud-user-service@@DEFAULT -> [{"instanceId":"192.168.1.14#29000#DEFAULT#DEFAULT_GROUP@@newbee-mall-cloud-user-service","ip":"192.168.1.14","port":29000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@newbee-mall-cloud-user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2025-10-24 17:17:27.250  INFO [newbee-mall-cloud-user-service,,] 5069 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.1.14\",\"port\":29000,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.1.14#29000#DEFAULT#DEFAULT_GROUP@@newbee-mall-cloud-user-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@newbee-mall-cloud-user-service\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@newbee-mall-cloud-user-service\",\"name\":\"DEFAULT_GROUP@@newbee-mall-cloud-user-service\",\"cacheMillis\":10000,\"lastRefTime\":1761297447248,\"checksum\":\"564ea15232d7c9016561de9a36b93556\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":478124108098250} from /127.0.0.1
+2025-10-24 17:17:27.399  WARN [newbee-mall-cloud-user-service,,] 5069 --- [/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-10-24 17:17:27.399  WARN [newbee-mall-cloud-user-service,,] 5069 --- [/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:69)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:660)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:51)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.lambda$new$0(RestTemplateSender.java:44)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:283)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1328)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1147)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1076)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 11 common frames omitted
+
+17:17:28,282 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24990ms before attempting reconnection.
+17:17:58,302 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24977ms before attempting reconnection.
+17:18:28,304 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24982ms before attempting reconnection.
+17:18:58,314 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24987ms before attempting reconnection.
+17:19:28,355 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24988ms before attempting reconnection.
+17:19:58,398 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24952ms before attempting reconnection.
+17:20:28,365 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24988ms before attempting reconnection.
+17:20:58,367 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24989ms before attempting reconnection.
+17:21:28,378 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24981ms before attempting reconnection.
+17:21:58,374 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24988ms before attempting reconnection.
+17:22:28,377 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24989ms before attempting reconnection.
+17:22:58,385 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24987ms before attempting reconnection.
+17:23:28,399 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24978ms before attempting reconnection.
+17:23:58,398 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24985ms before attempting reconnection.
+17:24:28,401 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24988ms before attempting reconnection.
+17:24:58,606 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24785ms before attempting reconnection.
+17:25:28,666 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24740ms before attempting reconnection.
+17:25:58,442 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24972ms before attempting reconnection.
+17:26:28,438 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24983ms before attempting reconnection.
+17:26:58,446 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24979ms before attempting reconnection.
+17:27:28,451 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24979ms before attempting reconnection.
+17:27:58,452 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24985ms before attempting reconnection.
+17:28:28,457 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24984ms before attempting reconnection.
+17:28:58,455 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24988ms before attempting reconnection.
+17:29:28,479 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24966ms before attempting reconnection.
+17:29:58,465 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24984ms before attempting reconnection.
+17:30:28,476 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24979ms before attempting reconnection.
+17:30:58,467 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24988ms before attempting reconnection.
+17:31:28,474 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24981ms before attempting reconnection.
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /Users/henryning/logs/csp/
+INFO: Sentinel log name use pid is: false
+17:31:58,493 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24987ms before attempting reconnection.
+2025-10-24 17:32:07.144  INFO [newbee-mall-cloud-user-service,4645ecb27a48ad1f,4645ecb27a48ad1f] 5069 --- [io-29000-exec-4] com.zaxxer.hikari.HikariDataSource       : hikariCP - Starting...
+2025-10-24 17:32:07.426  INFO [newbee-mall-cloud-user-service,4645ecb27a48ad1f,4645ecb27a48ad1f] 5069 --- [io-29000-exec-4] com.zaxxer.hikari.HikariDataSource       : hikariCP - Start completed.
+2025-10-24 17:32:07.475  INFO [newbee-mall-cloud-user-service,4645ecb27a48ad1f,4645ecb27a48ad1f] 5069 --- [io-29000-exec-4] .c.n.c.NewBeeMallCloudPersonalController : register api,loginName=15600705555,loginResult=用户名已存在！
+2025-10-24 17:32:19.097  INFO [newbee-mall-cloud-user-service,334bcd114c635f12,334bcd114c635f12] 5069 --- [io-29000-exec-5] .c.n.c.NewBeeMallCloudPersonalController : register api,loginName=15600705556,loginResult=success
+17:32:28,501 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24985ms before attempting reconnection.
+17:32:58,527 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination 192.168.110.57/<unresolved>:4560: Waiting 24962ms before attempting reconnection.
