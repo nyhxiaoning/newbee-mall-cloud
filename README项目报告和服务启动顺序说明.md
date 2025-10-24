@@ -396,7 +396,7 @@ chmod +x start-all-services.sh
 
 ```
 
-## 6.排查：逐步测试：先测试直连服务，再测试通过网关
+## 6.微服务问题排查：逐步测试：先测试直连服务，再测试通过网关
 
 ### 微服务：排查问题，比较麻烦
 
@@ -442,3 +442,17 @@ diagnose-gateway-issue.sh：全面诊断网关问题
 test-gateway-final.sh：自动修复常见问题
 
 修复完成当前的启动的网关问题。
+
+## 7.默认账号管理员：
+
+```
+{
+  "userName": "admin",
+  "passwordMd5": "e10adc3949ba59abbe56e057f20f883e"
+}
+通过接口：/users/admin/login
+可以正常登录
+
+
+
+```
