@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< ltd.newbee.cloud:newbee-mall-cloud-common >--------------
+[INFO] Building newbee-mall-cloud-common 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ newbee-mall-cloud-common ---
+[INFO] Deleting /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ newbee-mall-cloud-common ---
+[INFO] skip non existing resourceDirectory /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ newbee-mall-cloud-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/target/classes
+[INFO] /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/main/java/ltd/common/cloud/newbee/util/BeanUtil.java: /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/main/java/ltd/common/cloud/newbee/util/BeanUtil.java使用或覆盖了已过时的 API。
+[INFO] /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/main/java/ltd/common/cloud/newbee/util/BeanUtil.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/main/java/ltd/common/cloud/newbee/util/BeanUtil.java: 某些输入文件使用了未经检查或不安全的操作。
+[INFO] /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/main/java/ltd/common/cloud/newbee/util/BeanUtil.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ newbee-mall-cloud-common ---
+[INFO] skip non existing resourceDirectory /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ newbee-mall-cloud-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ newbee-mall-cloud-common ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ newbee-mall-cloud-common ---
+[INFO] Building jar: /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/target/newbee-mall-cloud-common-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ newbee-mall-cloud-common ---
+[INFO] Installing /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/pom.xml to /Users/henryning/.m2/repository/ltd/newbee/cloud/newbee-mall-cloud-common/0.0.1-SNAPSHOT/newbee-mall-cloud-common-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/henryning/Documents/code/personCode/newbee-mall-cloud/newbee-mall-cloud-common/target/newbee-mall-cloud-common-0.0.1-SNAPSHOT.jar to /Users/henryning/.m2/repository/ltd/newbee/cloud/newbee-mall-cloud-common/0.0.1-SNAPSHOT/newbee-mall-cloud-common-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.744 s
+[INFO] Finished at: 2025-10-25T17:22:21+08:00
+[INFO] ------------------------------------------------------------------------

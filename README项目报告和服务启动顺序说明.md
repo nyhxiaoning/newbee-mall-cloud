@@ -86,6 +86,11 @@ filePath: /Users/henryning/Documents/code/personCode/newbee-mall-cloud/static-fi
 
 基于对项目的分析，我来为你提供这个微服务项目的启动指南。
 
+# 启动问题记录：
+
+当前的项目，单独启动，可以注册，但是微服务多个启动，会被占用 XXXX🙋
+待优化：❎❌❌
+
 # 理解报告 — newbee-mall-cloud — 2024 年
 
 ## 1. 项目概览

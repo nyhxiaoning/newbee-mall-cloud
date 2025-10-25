@@ -1,0 +1,17 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< ltd.newbee.cloud:newbee-mall-cloud >-----------------
+[INFO] Building newbee-mall-cloud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ newbee-mall-cloud ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ newbee-mall-cloud ---
+[INFO] Installing /Users/henryning/Documents/code/personCode/newbee-mall-cloud/pom.xml to /Users/henryning/.m2/repository/ltd/newbee/cloud/newbee-mall-cloud/0.0.1-SNAPSHOT/newbee-mall-cloud-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.294 s
+[INFO] Finished at: 2025-10-25T17:22:19+08:00
+[INFO] ------------------------------------------------------------------------
